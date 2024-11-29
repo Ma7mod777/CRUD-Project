@@ -1,0 +1,90 @@
+<html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Bookmark</title>
+</head>
+<body >
+
+
+
+<div class="bg-parent py-5 min-vh-100">
+    <div class="container ">
+
+
+        <div class="position-relative my_header">
+            <h1 class="text-center my-4 bookmark-h1 mx-auto">Bookmarker</h1>
+        </div>
+     
+    <h3 class="text-center my-3 fs-4 gradient-color">
+        <i class="fa-solid fa-bookmark "></i>
+         Bookmark your favorite sites
+         <i class="fa-solid fa-bookmark"></i>
+
+        </h3>
+    
+        <label for="SiteName" class="fw-bolder"> <i class="fa-solid fa-book-journal-whills"></i> Site Name</label>
+    <input oninput="validatesitename ()" id="SiteName" class="form-control my-3" placeholder="Bookmark Name">
+
+    <label for="sitUrl" class="fw-bolder"> <i class="fa-solid fa-paperclip"></i> Site URL</label>
+    <input oninput="validatesiteURL ()" id="sitUrl" class="form-control my-3" placeholder="Website URL">
+    
+    <div class="mt-2 text-center btn-submit position-relative">
+        <button id="addbtn" onclick="bookmarksite()" class="bg-black text-white border-0 rounded-2 px-5 py-2 btn me-3">Submit</button>
+    
+    
+    </div>
+    
+<table class="bg-white w-100 mt-5 text-center">
+<thead>
+<tr class="fw-bolder  fs-6  border-bottom">
+    <td class="w-25 py-2">index</td>
+    <td class="w-25 py-2">Website Name</td>
+    <td class="w-25 py-2">Visit</td>
+    <td class="w-25 py-2">Delete</td>
+</tr>
+</thead>
+<tbody id="my-table">
+    <!-- <tr class="fs-6 border-bottom">
+        <td class="w-25 py-2">index</td>
+        <td class="w-25 py-2">Website Name</td>
+        <td class="w-25 py-2 "><button class="border-0 btn-visit rounded-2 py-2 px-4"><i class="fa-solid fa-eye text-white"></i><span class="text-white">  Visit</span></button></td>
+        <td class="w-25 py-2"><button class="border-0 btn-delete rounded-2 py-2 px-4"><i class="fa-solid fa-trash-can text-white"></i> <span class="text-white">Delete</span></button></td>
+    </tr> -->
+
+</tbody>
+
+
+</table>
+    
+    
+    </div>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
